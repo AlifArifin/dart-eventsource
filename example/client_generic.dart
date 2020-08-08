@@ -24,4 +24,7 @@ main() async {
     print("  event: ${event.event}");
     print("  data: ${event.data}");
   });
+
+  // If you want to close the connections
+  eventSource.close()
 }

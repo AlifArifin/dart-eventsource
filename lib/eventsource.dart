@@ -133,6 +133,11 @@ class EventSource extends Stream<Event> {
     }
   }
 
+  /// Stop listening from client
+  void close() {
+    client.close()
+  }
+
   void _updateRetryDelay(Duration retry) {
     _retryDelay = retry;
   }
